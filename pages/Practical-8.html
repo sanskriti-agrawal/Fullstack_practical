@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-8</title>
+</head>
+<body>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        h1{
+            text-align: center;
+            font-size: 40px;
+            padding: 30px;
+        }
+        .header{
+            top: 0;
+            position: fixed;
+            background-color: gray;
+            width: 100%;
+            height: 80px ;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+        }
+
+        .menu{
+            float: right;
+            list-style: none;
+        }
+
+        .menu li{
+            display: inline-block;
+        }
+
+        .menu a{
+            text-decoration: none;
+            padding: 30px;
+            text-transform: uppercase;
+            color: white;
+        }
+
+        .menu a:hover{
+            background-color: white;
+            color: black;
+        }
+
+        .banner{
+            background-image: url("../asset/practical8.jpg");
+            background-position: center;
+            background-size: cover;
+            height: 100vh;
+            width: 100%;
+            margin-top: 90px;
+            margin-bottom: 20px;
+            text-align: left;
+            color: white;
+            font-size: 5rem;
+        }
+
+        .banner h2{
+            font-size: 4rem;
+            text-align: left;
+           padding: 20px;
+        }
+
+        .circle{
+            background-color: goldenrod;
+            width: 270px;
+            height: 270px;
+            border-radius: 50%;
+            margin-left: 50px;
+            float: left;
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        #c1{
+            background-image: url("../asset/profile1.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+        #c2{
+            background-image: url("../asset/images.png");
+            background-position: center;
+            background-size: cover;
+
+        }
+        #c3{
+            background-image: url("../asset/download.png");
+            background-position: center;
+            background-size: cover;
+        }
+        #c4{
+            background-image: url("../asset/images\ 2.png");
+            background-position: center;
+            background-size: cover;
+        }
+
+        #container2{
+            display: block;
+        }
+
+        #mainContent{
+            background-color: grey;
+            width: 50%;
+            height: 500px;
+            float: left;
+        }
+
+        #Artical{
+            width: 47%;
+            height: 500px;
+            float: right;
+        }
+
+        .artical{
+            height: 154px;
+            margin-bottom: 20px;
+            background-color: chocolate;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            color: white;
+            overflow: hidden;
+        }
+
+        #artical1{
+            background-image: url("../asset/pro1.png");
+            background-position: center;
+            background-size: cover;
+        }
+        #artical2{
+            background-image: url("../asset/pro2.png");
+            background-position: center;
+            background-size: cover;
+        }
+        #artical3{
+            background-image: url("../asset/pro3.png");
+            background-position: center;
+            background-size: cover;
+        }
+
+        #container3{
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .square{
+           display: inline-block;
+          padding: 20px;
+          margin-top: 10px;
+          margin-left: 25px;
+          width: 19%;
+          height: 35%;
+          border-radius: 15px;
+        background-color: beige;
+        }
+
+        .square img{
+            display: inline-block;
+            width: 100%;
+            border-radius: 20px;
+            margin-bottom: 10px;
+            margin-top: 8px;
+            height: 10rem;
+        }
+
+        .square p{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 15px;
+            text-align: justify;
+        }
+
+        .square a{
+            text-decoration: none;
+            display: block;
+            border: 1px solid black;
+            border-radius: 7px;
+            text-align: center;
+            background-color: red;
+            color: cornsilk;
+            padding: 7px;
+        }
+
+        .square a:hover{
+            background-color: blue;
+        }
+
+        #footer{
+            background-color: plum;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            color: white;
+            height: 100px;
+            font-size: 30px;
+        }
+
+    </style>
+
+    <div class="header">
+        <ul class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#technologies">Technologies</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a name="home"></a>
+    </div>
+
+    <div class="banner"> 
+        <h2>PRACTICAL-8</h2>
+    </div>
+
+    <h1>Team Member</h1>
+    <div id="container">
+
+        <a name="team"></a>
+        <div class="circle" id="c1"></div>
+        <div class="circle" id="c2"></div>
+        <div class="circle" id="c3"></div>
+        <div class="circle" id="c4"></div>
+    </div>
+
+    <h1>About Us</h1>
+    <div id="container2">
+
+        <a name="about"></a>
+        <div id="mainContent"> 
+            <h2 style="font-size: 40px; color: white; text-align: left; padding: 10px;">About project</h2>
+            <p style="font-size: 30px; color: white; padding: 10px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis laborum, autem vitae accusamus
+                velit magni. Eveniet laudantium at odit animi nam consectetur eaque? Necessitatibus consequatur 
+                alias praesentium mollitia aspernatur, cupiditate ipsam dolor veniam est animi, iure cumque repellat
+                suscipit minus laborum itaque quidem qui. Explicabo temporibus dolor ex iusto, dicta maxime aperiam 
+                commodi odio nihil enim error tenetur deserunt consectetur, distinctio consequuntur ipsum reprehenderit
+                in ullam dolorum, iste excepturi at rem itaque. Ratione necessitatibus nesciunt, expedita.</p>
+        </div>
+
+        <div id="Artical">
+            <div class="artical" id="artical1"></div>
+            <div class="artical" id="artical2"></div>
+            <div class="artical" id="artical3"></div>
+        </div>
+    </div>
+
+    <div id="container3">
+        <h1>Technologies Used</h1>
+        <a name="technologies"></a>
+        <div class="square">
+            <img src="../asset/html.png" alt="HTML image">
+            <h4>Introduction to HTML</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Porro totam nulla sit itaque ad ea facere officiis, excepturi
+                    cum dolorum veniam voluptas dignissimos. Nihil voluptatibus 
+                    commodi esse eligendi saepe, beatae eius numquam pariatur sed
+                    assumenda voluptates dolorum nostrum. Amet, debitis?
+                    </p>
+                <a href="./HTML.html">Read More</a>
+        </div>
+
+        <div  class="square">
+                <img src="../asset/css.png" alt="CSS image">
+                <h4>Introduction to CSS</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Porro totam nulla sit itaque ad ea facere officiis, excepturi
+                    cum dolorum veniam voluptas dignissimos. Nihil voluptatibus 
+                    commodi esse eligendi saepe, beatae eius numquam pariatur sed
+                    assumenda voluptates dolorum nostrum. Amet, debitis?
+                    </p>
+                <a href="./CSS.html">Read More</a>
+        </div>
+
+        <div class="square">
+            <img src="../asset/js.png" alt="Javascript image">
+                <h4>Introduction to Javascript </h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Porro totam nulla sit itaque ad ea facere officiis, excepturi
+                    cum dolorum veniam voluptas dignissimos. Nihil voluptatibus 
+                    commodi esse eligendi saepe, beatae eius numquam pariatur sed
+                    assumenda voluptates dolorum nostrum. Amet, debitis?
+                    </p>
+                <a href="./Javascript.html">Read More</a>
+        </div>
+
+        <div  class="square">
+            <img src="../asset/bootstrap.jpg" alt="bootstrap image">
+                <h4>Introduction to bootstrap</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Porro totam nulla sit itaque ad ea facere officiis, excepturi
+                    cum dolorum veniam voluptas dignissimos. Nihil voluptatibus 
+                    commodi esse eligendi saepe, beatae eius numquam pariatur sed
+                    assumenda voluptates dolorum nostrum. Amet, debitis?
+                    </p>
+                <a href="./Bootrap.html">Read More</a>
+        </div>
+    </div>
+
+    <h1>Contact</h1>
+    <div id="footer">
+        <a name="contact"> </a>
+            <p>Website Template for Practical-8 &copy; Tetra <br>
+            <a href="#home">Back to top</a></p>
+    </div>
+</body>
+</html>
