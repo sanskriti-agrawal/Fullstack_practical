@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practical-10</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      header {
+        width: 100%;
+        height: 70px;
+        background-color: rgb(47, 54, 64);
+        position: fixed;
+        display: flex;
+        justify-content: center;
+      }
+
+      header img {
+        width: 80px;
+        height: 70px;
+        margin-right: 9px;
+      }
+
+      header h2 {
+        color: white;
+        text-align: center;
+        line-height: 70px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .side-bar {
+        width: 20%;
+        height: 100vh;
+        left: -100%;
+        top: 0;
+        margin-top: 70px;
+        position: fixed;
+        transition: 0.8s;
+        background-color: #353b48;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      ul li {
+        color: white;
+        border-bottom: 1px solid white;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 20px;
+      }
+
+      li a:hover {
+        background-color: rgb(220, 221, 225);
+        color: black;
+      }
+
+      li a:hover i {
+        background-color: rgb(220, 221, 225);
+        color: black;
+      }
+
+      li a i {
+        font-size: 18px;
+        color: white;
+        margin-right: 20px;
+      }
+
+      .show-btn,
+      .hide-btn {
+        position: fixed;
+        font-size: 30px;
+        color: white;
+        transition: 0.8s;
+        top: 20px;
+        left: 20px;
+      }
+
+      .hide-btn {
+        opacity: 0;
+      }
+
+      #chk {
+        position: absolute;
+        visibility: hidden;
+        z-index: -100;
+      }
+
+      #chk:checked ~ .side-bar {
+        left: 0;
+      }
+      #chk:checked ~ .show-btn {
+        opacity: 0;
+      }
+      #chk:checked ~ .hide-btn {
+        opacity: 1;
+      }
+      #chk:checked ~ main {
+        width: 80%;
+      }
+
+      .social {
+        margin-top: 180px;
+        display: flex;
+        justify-content: space-evenly;
+        border-top: 2px solid rgba(255, 255, 255, 0.1);
+        border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .social i {
+        padding: 10px 0px;
+        font-size: 30px;
+        color: white;
+        float: left;
+      }
+
+      main {
+        width: 100%;
+        float: right;
+        transition: 0.8sec;
+      }
+
+      main img {
+        width: 100%;
+        max-width: 650px;
+        display: block;
+        margin: auto;
+        margin-top: 70px;
+      }
+
+      main p {
+        font-size: 18px;
+        padding-left: 20px;
+      }
+
+      @media (max-width: 500px) {
+        .header {
+          width: 100%;
+          height: 70px;
+          background-color: #2f3640;
+          position: fixed;
+          top: 0;
+          display: flex;
+          justify-content: center;
+        }
+        .header img {
+          height: 70px;
+          width: 70px;
+          margin-right: 5px;
+        }
+        .header h2 {
+          display: none;
+        }
+        .side-bar {
+          width: 100%;
+          height: 100vh;
+          background-color: #353b48;
+          position: fixed;
+          top: 0;
+          left: -100%;
+          margin-top: 70px;
+          transition: 0.7s;
+        }
+        ul {
+          list-style: none;
+        }
+        ul li {
+          border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+        }
+        ul li a {
+          display: block;
+          color: white;
+          text-decoration: none;
+          text-transform: uppercase;
+          padding: 20px;
+        }
+
+        .show-btn,
+        .hide-btn {
+          position: fixed;
+          font-size: 30px;
+          color: white;
+          line-height: 70px;
+          transition: 0.4s;
+          top: 0px;
+          left: 20px;
+        }
+        .hide-btn {
+          opacity: 0;
+        }
+        #chk {
+          position: absolute;
+          visibility: hidden;
+          z-index: -100;
+        }
+
+        #chk:checked ~ .side-bar {
+          left: 0;
+        }
+        #chk:checked ~ .show-btn {
+          opacity: 0;
+        }
+        #chk:checked ~ .hide-btn {
+          opacity: 1;
+        }
+        #chk:checked ~ .content {
+          width: 80%;
+        }
+      }
+    </style>
+
+    <header>
+      <img src="../asset/practical10.png" />
+      <h2>FULLSTACK</h2>
+    </header>
+
+    <input type="checkbox" id="chk" />
+    <label for="chk" class="show-btn">
+      <i class="fa fa-bars"></i>
+    </label>
+    <label for="chk" class="hide-btn">
+      <i class="fa fa-times"></i>
+    </label>
+    <div class="side-bar">
+      <ul>
+        <li>
+          <a href="#"><i class="fa fa-home"></i>HOME</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-user"></i>ABOUT</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-tasks"></i>SERVICES</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-rss"></i>BLOG</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-id-card"></i>CONTACT</a>
+        </li>
+      </ul>
+
+      <div class="social">
+        <a href="#" target="_blank"><i class="fa fa-facebook-square"></i></a>
+        <a href="#" target="_blank"
+          ><i class="fa fa-youtube-square" aria-hidden="true"></i
+        ></a>
+        <a href="#" target="_blank"
+          ><i class="fa fa-instagram" aria-hidden="true"></i
+        ></a>
+      </div>
+    </div>
+
+    <main>
+      <img src="../asset/practical10-2.jpg" />
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda,
+        possimus officiis, qui laboriosam veniam illo voluptatibus nobis dicta
+        repudiandae odit numquam laudantium, omnis corrupti ut magni fugit?
+        Possimus eum similique nobis dignissimos, maiores quidem dolores,
+        perferendis quaerat, rerum tempora explicabo labore eligendi id
+        obcaecati. Facilis id neque voluptas corrupti illo reprehenderit saepe
+        provident cumque fugit architecto modi repellat, reiciendis est dolores?
+        Qui sit, iste consequuntur sint iusto delectus officia aspernatur at
+        nesciunt dolorum! Doloribus vitae adipisci facilis? Dolor voluptatibus
+        asperiores quod fugit autem veritatis repellendus iure repudiandae eum
+        aspernatur ut culpa atque explicabo, nostrum vero illum odit doloremque.
+        Iure, nihil? Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        Esse itaque est facere voluptatem harum expedita beatae, perferendis,
+        qui deserunt vel nisi dignissimos doloribus veniam consequatur quis
+        blanditiis aliquam reiciendis deleniti dicta molestiae. Repudiandae
+        expedita dolores porro. Necessitatibus nam quam quae Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Molestias inventore iste corrupti
+        totam nisi neque et voluptas earum eligendi pariatur rem consectetur
+        veritatis sapiente fugit obcaecati cum quasi, vero esse fuga dolorum
+        laboriosam consequuntur dicta dolore! Architecto ad sequi sapiente id
+        magnam excepturi aliquam quae ex debitis ullam eum, possimus voluptas
+        consequuntur facere amet omnis asperiores dolorem repellat! Perspiciatis
+        quaerat minus, ex quam culpa voluptatum neque accusamus officiis ea!
+        Provident tempore, nihil delectus dignissimos dolore itaque nobis sunt
+        officiis adipisci deserunt ex perferendis consequuntur veritatis,
+        facilis illum asperiores, obcaecati corporis sapiente? Cupiditate
+        mollitia laboriosam fugit perspiciatis optio quisquam autem similique.
+      </p>
+    </main>
+  </body>
+</html>
