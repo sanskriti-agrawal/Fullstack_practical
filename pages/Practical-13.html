@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practical-13</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+  </head>
+  <body>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .heading{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-top: 26px;
+          font-size: 30px;
+      }
+
+      .table {
+        display: block;
+        justify-content: center;
+        align-items: center;
+      }
+
+      table {
+        width: 700px;
+        text-align: left;
+        line-height: 30px;
+        border-collapse: collapse;
+        margin: 20px auto;
+        border-radius: 5px;
+      }
+
+      .spacing {
+        line-height: 45px;
+      }
+
+      .spacing th i {
+        padding: 5px;
+        font-size: 30px;
+      }
+
+      .spacing th {
+        padding: 13px;
+        font-size: 30px;
+        color: #64548f;
+        text-align: center;
+        border-right: 3px solid white;
+      }
+
+      tbody td {
+        line-height: 30px;
+        padding: 7px;
+        border-right: 3px solid white;
+        text-align: center;
+      }
+
+      tbody tr:nth-child(1){
+          font-size: 26px;
+          color: darkgreen;
+      }
+
+      .row1 td{
+          background-color: rgb(231, 227, 227);
+      }
+
+      .row2 td:nth-child(1){
+          background-color: #c1dcb7;
+      }
+
+      .row2 td:nth-child(2){
+          background-color:#bad6c8;
+      }
+
+      .row2 td:nth-child(3){
+          background-color:#bbd3dc;
+      }
+
+      .row2 td:nth-child(4){
+          background-color:#d5e4bc;
+      }
+
+      .button{
+         margin-left: 20px;
+         margin-top: 18px;
+         margin-bottom: 18px;
+      }
+
+      .button a{
+          text-decoration: none;
+          color: white;
+          background-color: purple;
+          padding: 18px;
+          font-size: 20px;
+          border-radius: 10px ;
+      }
+
+      .image img {
+        width: 40px;
+      }
+
+    </style>
+    <div class="table">
+      <h2 class="heading">Select Your Plan</h2>
+      <table>
+        <thead>
+          <tr class="spacing">
+            <th style="background-color: #c1dcb7">
+              <i class="fa fa-building" style="color: #64548f"></i>Basic
+            </th>
+
+            <th style="background-color: #bad6c8">
+              <i class="fa fa-superpowers" style="color: #64548f"></i>Plus
+            </th>
+
+            <th style="background-color: #bbd3dc">
+              <i class="fa fa-telegram" style="color: #64548f"></i>Deluxe
+            </th>
+
+            <th style="background-color: #d5e4bc">
+              <i class="fa fa-tachometer" style="color: #64548f"></i>Pro
+            </th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr class="row1">
+            <td>Rs. 500/-</td>
+            <td>Rs. 1500/-</td>
+            <td>Rs. 2500/-</td>
+            <td>Rs. 3500/-</td>
+          </tr>
+
+          <tr class="row2">
+            <td>50 pages</td>
+            <td>75 pages</td>
+            <td>Unlimited</td>
+            <td>Unlimited</td>
+          </tr>
+
+          <tr class="row1">
+            <td>3 users</td>
+            <td>5 users</td>
+            <td>10 users</td>
+            <td>Unlimited</td>
+          </tr>
+
+          <tr class="row2">
+            <td>10 Sites</td>
+            <td>25 Sites</td>
+            <td>100 Sites</td>
+            <td>Unlimited</td>
+          </tr>
+
+          <tr class="row1">
+            <td>50 MB</td>
+            <td>250 MB</td>
+            <td>1 GB</td>
+            <td>5 GB</td>
+          </tr>
+
+          <tr class="row2">
+            <td>Included</td>
+            <td>Included</td>
+            <td>Included</td>
+            <td>Included</td>
+          </tr>
+
+          <tr class="row1">
+            <td>
+              <div class="image"><img src="../asset/check.jpg" alt="" /></div>
+            </td>
+            <td>
+              <div class="image"><img src="../asset/check.jpg" alt="" /></div>
+            </td>
+            <td>
+              <div class="image"><img src="../asset/check.jpg" alt="" /></div>
+            </td>
+            <td>
+              <div class="image"><img src="../asset/check.jpg" alt="" /></div>
+            </td>
+          </tr>
+
+          <tr class="row2">
+            <td>
+              <div class="image"><img src="../asset/cross.jpg" alt="" /></div>
+            </td>
+            <td>
+              <div class="image"><img src="../asset/check.jpg" alt="" /></div>
+            </td>
+            <td>
+              <div class="image"><img src="../asset/check.jpg" alt="" /></div>
+            </td>
+            <td>
+              <div class="image"><img src="../asset/check.jpg" alt="" /></div>
+            </td>
+          </tr>
+
+          <tr class="row1">
+            <td>
+              <div class="image"><img src="../asset/cross.jpg" alt="" /></div>
+            </td>
+            <td>
+              <div class="image"><img src="../asset/check.jpg" alt="" /></div>
+            </td>
+            <td>
+              <div class="image"><img src="../asset/check.jpg" alt="" /></div>
+            </td>
+            <td>
+              <div class="image"><img src="../asset/check.jpg" alt="" /></div>
+            </td>
+          </tr>
+
+          <tr class="row2">
+            <td>
+              <div class="image"><img src="../asset/cross.jpg" alt="" /></div>
+            </td>
+            <td>
+              <div class="image"><img src="../asset/cross.jpg" alt="" /></div>
+            </td>
+            <td>
+              <div class="image"><img src="../asset/check.jpg" alt="" /></div>
+            </td>
+            <td>
+              <div class="image"><img src="../asset/check.jpg" alt="" /></div>
+            </td>
+          </tr>
+
+          <tr class="row1">
+            <td>
+              <div class="image"><img src="../asset/cross.jpg" alt="" /></div>
+            </td>
+            <td>
+              <div class="image"><img src="../asset/cross.jpg" alt="" /></div>
+            </td>
+            <td>
+              <div class="image"><img src="../asset/cross.jpg" alt="" /></div>
+            </td>
+            <td>
+              <div class="image"><img src="../asset/check.jpg" alt="" /></div>
+            </td>
+          </tr>
+
+          <tr class="row2">
+            <td>
+              <div class="button"><a href="#">Sign Up</a></div>
+            </td>
+            <td>
+              <div class="button"><a href="#">Sign Up</a></div>
+            </td>
+            <td>
+              <div class="button"><a href="#">Sign Up</a></div>
+            </td>
+            <td>
+              <div class="button"><a href="#">Sign Up</a></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
