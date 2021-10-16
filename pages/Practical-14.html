@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-14</title>
+</head>
+<body>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+       body{
+            background-color: grey;
+        }
+
+        h1{
+            color: white;
+            font-size: 70px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container{
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .container h2{
+            font-size: 60px;
+            color: yellow;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        #minus{
+            font-size: 30px;
+            width: 60px;
+            height: 50px;
+            background-color: yellow;
+        }
+
+        #plus{
+            font-size: 30px;
+            margin: 20px;
+            width: 60px;
+            height: 50px;
+            background-color: yellow;
+        }
+    </style>
+
+    <h1>COUNTER</h1>
+    <div class="container">
+        <button id="minus" onclick="decrement()">-</button>
+        <h2 id="number"></h2>
+        <button id="plus" onclick="increment()">+</button>
+    </div>
+
+    <script src="./Practical-14.js"></script>
+</body>
+</html>
