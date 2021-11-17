@@ -16,7 +16,6 @@ function increment(){
 
 function decrement(){
 
-    
     if(data==0){
         document.getElementById("minus").disabled=true;
     }
